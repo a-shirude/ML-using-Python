@@ -1,0 +1,28 @@
+1. Introduction to Probability and Statistics
+	Using R
+	Third Edition
+	G. Jay Kerns
+https://cran.r-project.org/web/packages/IPSUR/vignettes/IPSUR.pdf
+
+2. Machine Learning in Python
+	-- Essential Techniques for Predictive analysis
+	Michael Bowles
+	-- WILEY Publication
+
+3.Introduction to Statistical Learning:With applications in R
+
+https://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf
+http://freecomputerbooks.com/An-Introduction-to-Statistical-Learning.html
+
+4.Machine Learning by Tom Mitchell
+
+https://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf
+
+
+Forecasting:
+============
+
+Forecasting: Principles  and Practice 
+	- Rob J Hyndman and George Athanasopoulos
+
+

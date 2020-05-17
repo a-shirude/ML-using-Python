@@ -1,0 +1,56 @@
+************************
+Confusion Matrix
+************************
+
+Total Nos records: 165
+
+		Predicted		Predicted
+		 (YES)			  (NO)	
+Actual
+(YES)		  TP = 100		 FN = 5
+
+Actual		  FP = 10		 TN = 50
+(NO)	
+
+Total ==> (TP + TN + FP + FN)
+
+Accuracy ==> 	(TP + TN) \ Total  ==> (100 + 50 ) / 165 ==> 0.91 (91%)
+
+Misclassification Rate ==> how often it is wrong?
+		==> (FP + FN) / Total ==> (10 + 5) / 165 ==> 0.09 (9%) Erro Rate
+
+True Positive Rate ==>  When it actually Yes, how often model predicts YES
+(Senisitivity or Recall)
+		 ==> TP / (Total Actual Yes) ==> 100/105 ==> 0.95
+
+False Positive Rate ==> When it actually No, how often model predicts Yes
+		==> FP / (Total Actual No) ==> 10 / 60 ==> 0.17
+
+Specificity ==>  WHen it actually NO, how often Model predicts NO?
+		==> TN / (total Actual NO) ==> 50 / 60 ==> 0.83
+
+Precision ==> When model predicts YES, how often is it correct?
+		==> TP / (Total Predicted YES) ==> 100 / 110 ==> 0.91
+
+Prevalence ==> How often the YES condition, actually occurs in our data set
+		==> Actual YES / Total ==> 105/165 ==> 0.64
+
+ ROC --> Receiver Operating Charactertis(ROC)
+AUC --> Area Under Curve
+
+ROC-AUC Score-==> 
+Ratio between True Postive Rate(Sensitivity) and False Positive Rate(1-Specificity)
+
+>>metrics.accuracy_score(test_y,grid_predictions)
+
+>> from sklearn.metrics import confusion_matrix
+cnf_matrix_gnb = confusion_matrix(test_y, prediction)
+print(cnf_matrix_gnb)
+
+>> from sklearn.metrics import classification_report, confusion_matrix , recall_score, precision_score, roc_auc_score
+pd.DataFrame(data=[accuracy_score(test_y, prediction), recall_score(test_y, prediction),
+                   precision_score(test_y, prediction), roc_auc_score(test_y, prediction)], 
+             index=["accuracy", "recall", "precision", "roc_auc_score"])
+
+
+	
